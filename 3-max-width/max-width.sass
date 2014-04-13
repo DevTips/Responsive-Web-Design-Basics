@@ -1,0 +1,21 @@
+@import '../base'
+
+
+.container
+  width: 960px
+  +clearfix
+  
+.column
+  float: left
+  width: 50%
+  box-sizing: border-box
+  padding: 20px
+
+
+@media (max-width: 960px)
+  .container
+    width: auto
+  
+  .column
+    float: none
+    width: auto

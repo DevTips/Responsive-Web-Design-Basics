@@ -1,0 +1,50 @@
+// Set up the general style of the page...
+
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro)
+@import 'bourbon'
+
+
+body
+  background: #e5e5e5
+  font-family: 'Source Sans Pro', sans-serif
+  font-size: 18px
+
+h2
+  text-align: center
+  font-size: 44px
+  margin: 0
+  padding: 50px 0 0
+  line-height: 1
+
+.carrot
+  background:
+    image: url(http://icons.iconarchive.com/icons/visualpharm/icons8-metro-style/512/Kitchen-Carrot-icon.png)
+    size: contain
+  display: block
+  +size(30)
+  margin: 30px auto
+  position: relative
+  opacity: 0.3
+  
+  &:before,
+  &:after
+    content: ''
+    display: block
+    +size(50 2)
+    background: black
+    +position(absolute, 50% 0 0 0)
+    margin-top: -1px
+  
+  &:before
+    left: 100%
+    margin-left: 20px
+  
+  &:after
+    right: 100%
+    margin-right: 20px
+      
+.container
+  margin: 0 auto
+  background: white
+  padding: 50px
+  box-sizing: border-box

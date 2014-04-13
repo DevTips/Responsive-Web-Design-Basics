@@ -1,0 +1,34 @@
+@import '../base'
+
+
+.container
+  width: 960px
+  +clearfix
+  
+.column
+  float: left
+  width: 50%
+  box-sizing: border-box
+  padding: 20px
+
+.three-items
+  text-align: center
+
+.item
+  display: inline-block
+  width: 30%
+  margin: 1%
+  height: 50px
+  background: #ccc
+  
+  min-width: 150px
+  
+
+
+@media (max-width: 960px)
+  .container
+    width: auto
+  
+  .column
+    float: none
+    width: auto
